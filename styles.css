@@ -1,0 +1,93 @@
+:root {
+    --color-white: white;
+    --color-black: black;
+    --color-orange: orange;
+    --body-font: "Gowun Dodum", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-white);
+    transition: 1.5s;
+    font-family: var(--body-font);
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timer {
+    margin: 100px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 5px var(--color-black);
+  }
+  
+  .counter {
+    margin: 0 auto;
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 4em;
+    opacity: 0.7;
+  }
+  
+  .actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: 1.5s;
+  }
+  
+  .actions p {
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #start,
+  #pause,
+  #stop {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: -50px 10px;
+    cursor: pointer;
+    text-align: center;
+    color: var(--color-white);
+    border: 2px dashed var(--color-orange);
+    box-shadow: 0px 0px 0px 2px var(--color-orange);
+    transition: 0.5s;
+    background-color: var(--color-black);
+  }
+  
+  #start:hover,
+  #pause:hover,
+  #stop:hover {
+    box-shadow: 0px 0px 10px 2px var(--color-orange);
+  }
+  
+  .bg-white {
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 20px 5px var(--color-white);
+  }
+  
+  .bg-black {
+    background-color: var(--color-black);
+  }
+  
+  .show-item {
+    display: block !important;
+  }
+  
+  .hide-item {
+    display: none !important;
+  }
+  
